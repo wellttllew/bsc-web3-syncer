@@ -54,3 +54,6 @@ ERROR[07-24|10:47:14.259] failed to fetch block                    error="429 To
 ```
 
 That means you need to pay a few bucks to remove such contraints. Or you can tweak the code by adding some sleeps in the `block fetching routine`.  (Maybe you can create multiple endpoints and build a pool of endpoints.)  
+
+
+> BTW, you can also use the websocket endpoint(which starts with `wss`), it works better as a single TCP connection will be shared.  
